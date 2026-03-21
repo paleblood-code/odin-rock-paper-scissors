@@ -4,9 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Odin Project | Rock Paper Scissors</title>
+    <style>
+      .btn {
+        font-size: 0.875rem;
+        font-weight: bold;
+        border: none;
+        background-color: #333;
+        color: #ddd;
+        padding: 0.875rem 2rem;
+        border-radius: 1rem;
+        cursor: pointer;
+      }
+
+      .computer-ctn {
+        margin-block-start: 2rem;
+      }
+
+      .computer-ctn button {
+        border: none;
+        background-color: burlywood;
+        padding: 1rem 2.5rem;
+        font-size: 0.875rem;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <h1>Rock Paper Scissors</h1>
+
+    <div class="score">
+      <p>Human: <span class="human-score"></span></p>
+      <p>Computer: <span class="computer-score"></span></p>
+    </div>
+
+    <button class="btn rock">ROCK</button>
+    <button class="btn paper">PAPER</button>
+    <button class="btn scissors">SCISSORS</button>
+
+    <div class="choices"></div>
+    <div class="results"></div>
+    <div class="round-text"></div>
 
     <script src="js/main.js"></script>
   </body>
